@@ -23,7 +23,8 @@
 
        function f1(){
          $.get( "api/v1/employees", function( data ) {
-   $("#displayEmp" ).html(  data[0].location );
+   //$("#displayEmp" ).html(  data[0].location );
+   $("#displayEmp" ).html(  JSON.stringify(data) );
     console.log(data)
   //alert( "Load was performed." );
 });
